@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM public.ecr.aws/docker/library/python:3.9.20
 WORKDIR /
 RUN apt update && apt -y install curl git wget
 # Copies the trainer code to the docker image.
